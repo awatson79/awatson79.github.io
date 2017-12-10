@@ -33,29 +33,8 @@
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
   <img src="/lol.jpg" style="width:100%;min-height:350px;max-height:600px;"> 
-   </div>
-									   
+   </div>									   
 
-<section class="move-area">
-  <div class='.container'>
-    <div class='eye'></div>
-    <div class='eye'></div>
-
-  </div>	    
-</section>
-		
-$(".move-area").mousemove(function(event) {
-  var eye = $(".eye");
-  var x = (eye.offset().left) + (eye.width() / 2);
-  var y = (eye.offset().top) + (eye.height() / 2);
-  var rad = Math.atan2(event.pageX - x, event.pageY - y);
-  var rot = (rad * (180 / Math.PI) * -1) + 180;
-  eye.css({
-    '-webkit-transform': 'rotate(' + rot + 'deg)',
-    '-moz-transform': 'rotate(' + rot + 'deg)',
-    '-ms-transform': 'rotate(' + rot + 'deg)',
-    'transform': 'rotate(' + rot + 'deg)'
-  });
 });	  
 <!-- Team Container -->
 <div class="w3-container w3-padding-64 w3-center" id="team">
